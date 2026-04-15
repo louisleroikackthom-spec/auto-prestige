@@ -11,3 +11,10 @@
     gap: 15px;
     list-style: none;
 }
+section {
+    padding: 40px;
+}
+
+div {
+    margin: 20px 0;
+}
