@@ -1,29 +1,99 @@
-<nav class="nav-bar">
-    <div class="logo-nav">AutoPrestige</div>
-    <ul class="menu-nav">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Catalogue</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-<section class="hero">
-    <h1>Auto Prestige — L'Excellence à Votre Portée</h1>
-    <p>Les plus belles voitures de luxe à Yaoundé</p>
-</section>
-<section>
-    <h2>Nos voitures</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Prestige — Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap)" rel="stylesheet">
+    <script src="[kit.fontawesome.com](https://kit.fontawesome.com/a2d0a6ddf6.js)" crossorigin="anonymous"></script>
+</head>
 
-    <div>
-        <h3>Mercedes Classe S</h3>
-        <p>85 000 000 FCFA</p>
-    </div>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav-bar">
+        <div class="logo-nav">Auto<span>Prestige</span></div>
+        <ul class="menu-nav">
+            <li><a href="index.html" class="actif">Accueil</a></li>
+            <li><a href="shop.html">Catalogue</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="panier">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="compteur-panier">0</span>
+        </div>
+    </nav>
 
-    <div>
-        <h3>Range Rover</h3>
-        <p>92 000 000 FCFA</p>
-    </div>
-</section>
-<footer>
-    <p>© 2025 Auto Prestige</p>
-</footer>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-contenu">
+            <h1>Auto Prestige — L'Excellence à Votre Portée</h1>
+            <p>Les plus belles voitures de luxe à Yaoundé</p>
+            <a href="shop.html" class="btn-principal">Voir le Catalogue</a>
+        </div>
+    </section>
+
+    <!-- ===== VÉHICULES VEDETTES ===== -->
+    <section class="vedettes">
+        <h2>Nos Coups de Cœur</h2>
+        <div class="grille-voitures">
+            <article class="carte-voiture">
+                <img src="images/voiture1.jpg" alt="Mercedes Classe S noire">
+                <h3>Mercedes Classe S</h3>
+                <p class="prix-voiture">85 000 000 FCFA</p>
+                <button class="btn-secondaire">Voir Détails</button>
+            </article>
+            <article class="carte-voiture">
+                <img src="images/voiture2.jpg" alt="Range Rover Sport blanc">
+                <h3>Range Rover Sport</h3>
+                <p class="prix-voiture">92 000 000 FCFA</p>
+                <button class="btn-secondaire">Voir Détails</button>
+            </article>
+            <article class="carte-voiture">
+                <img src="images/voiture3.jpg" alt="BMW Série 7 bleue">
+                <h3>BMW Série 7</h3>
+                <p class="prix-voiture">79 500 000 FCFA</p>
+                <button class="btn-secondaire">Voir Détails</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===== POURQUOI NOUS CHOISIR ===== -->
+    <section class="arguments">
+        <h2>Pourquoi Nous Choisir</h2>
+        <div class="grille-arguments">
+            <div class="argument">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Garantie 1 an</h3>
+            </div>
+            <div class="argument">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Livraison au Cameroun</h3>
+            </div>
+            <div class="argument">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Service après-vente</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-contenu">
+            <div class="logo-footer">Auto<span>Prestige</span></div>
+            <ul class="liens-footer">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="shop.html">Catalogue</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-bas">
+            © 2025 Auto Prestige. Tous droits réservés.
+        </div>
+    </footer>
+</body>
+</html>
